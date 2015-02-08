@@ -23,7 +23,27 @@ The max multiplier is: <?php echo $_GET["max-multiplier"]; ?><br>
 <?php compareminmax($minmult, $maxmult, 'multiplier');?><br>
 <?php compareminmax($mincand, $maxcand, 'multiplicand');?><br>
 
+<?php
+$himultlooper = $maxmult;
+$lomultlooper = $minmult;
+$hicandlooper = $maxcand;
+$locandlooper = $mincand;
 
+
+while ($lomultlooper <= $himultlooper)
+{
+echo "<table>
+<tr>"?>
+
+
+<?php echo "
+<td align=\"right\">".$maxmult	."</td>
+<td align=\"right\">".$minmult."</td>
+</tr>\n </table>";
+
+$lomultlooper = $lomultlooper+1;
+}
+?><br>
 <?php
 function compareminmax($min, $max,$description)
 {
