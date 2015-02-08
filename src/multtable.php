@@ -29,20 +29,18 @@ $lomultlooper = $minmult;
 $hicandlooper = $maxcand;
 $locandlooper = $mincand;
 
-
-while ($lomultlooper <= $himultlooper)
+echo "<table>";
+for ($lomultlooper = $minmult;$lomultlooper <=  $himultlooper; $lomultlooper += 1)
 {
-echo "<table>
-<tr>"?>
-
-
-<?php echo "
-<td align=\"right\">".$maxmult	."</td>
-<td align=\"right\">".$minmult."</td>
-</tr>\n </table>";
-
-$lomultlooper = $lomultlooper+1;
+	echo "<tr>";
+	for ($locandlooper = $mincand;$locandlooper <=  $hicandlooper; $locandlooper += 1)
+	{
+		echo "<td>".$locandlooper."</td>";
+	}
+	echo "</tr>\n";
 }
+
+"</table>"
 ?><br>
 <?php
 function compareminmax($min, $max,$description)
