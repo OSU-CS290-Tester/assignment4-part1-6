@@ -14,17 +14,19 @@ The max multiplier is: <?php echo $_GET["max-multiplier"]; ?><br>
 <?php echo $mincand; ?><br>
 <?php echo $minmult; ?><br>
 <?php echo $maxmult; ?><br>
+
+<?php compareminmax($minmult, $maxmult, 'multiplier');?><br>
+<?php compareminmax($mincand, $maxcand, 'multiplicand');?><br>
+
 <?php
-if ($mincand > $maxcand)
+function compareminmax($min, $max,$description)
 {
-	echo 'The minimum multiplicand entered is greater than the maximum multiplicand entered';
+	$retval = $description;
+    if ($min > $max)
+	{
+		echo "The minimum value of $description is greater than the maximum value of $description";
+	}
 }
-?>
-<?php
-if ($minmult > $maxmult)
-{
-	echo 'The minimum multiplier entered is greater than the maximum multiplier entered';
-}
-?>
+?><br>
 </body>
 </html> 
