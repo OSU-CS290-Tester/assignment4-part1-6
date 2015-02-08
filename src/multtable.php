@@ -15,8 +15,14 @@ The max multiplier is: <?php echo $_GET["max-multiplier"]; ?><br>
 <?php echo $minmult; ?><br>
 <?php echo $maxmult; ?><br>
 
+<?php intcheck($maxcand,'max multiplicand');?><br>
+<?php intcheck($mincand,'min multiplicand');?><br>
+<?php intcheck($minmult,'min multiplicand');?><br>
+<?php intcheck($maxmult,'max multiplicand');?><br>
+
 <?php compareminmax($minmult, $maxmult, 'multiplier');?><br>
 <?php compareminmax($mincand, $maxcand, 'multiplicand');?><br>
+
 
 <?php
 function compareminmax($min, $max,$description)
@@ -25,6 +31,18 @@ function compareminmax($min, $max,$description)
     if ($min > $max)
 	{
 		echo "The minimum value of $description is greater than the maximum value of $description";
+	}
+}
+?><br>
+<?php
+function intcheck($thisvar,$description)
+{
+	if (empty($thisvar)) {
+		echo "Missing parameter $description . ";
+	}
+   if (is_numeric($thisvar)=== false) 
+	{
+		echo "$description must be an integer. ";
 	}
 }
 ?><br>
