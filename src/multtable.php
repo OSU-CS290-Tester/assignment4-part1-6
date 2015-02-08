@@ -35,7 +35,8 @@ for ($lomultlooper = $minmult;$lomultlooper <=  $himultlooper; $lomultlooper += 
 	echo "<tr>";
 	for ($locandlooper = $mincand;$locandlooper <=  $hicandlooper; $locandlooper += 1)
 	{
-		echo "<td>".$locandlooper."</td>";
+		$sum_total = $lomultlooper * $locandlooper;
+		echo "<td>".$sum_total."</td>";
 	}
 	echo "</tr>\n";
 }
