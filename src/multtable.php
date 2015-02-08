@@ -24,10 +24,10 @@ The max multiplier is: <?php echo $_GET["max-multiplier"]; ?><br>
 <?php compareminmax($mincand, $maxcand, 'multiplicand');?><br>
 
 <?php
-$himultlooper = $maxmult;
-$lomultlooper = $minmult;
-$hicandlooper = $maxcand;
-$locandlooper = $mincand;
+$himultlooper = $maxcand;
+$lomultlooper = $mincand;
+$hicandlooper = $maxmult; 
+$locandlooper = $minmult;
 
 echo "<table>";
 for ($lomultlooper = $minmult;$lomultlooper <=  $himultlooper; $lomultlooper += 1)
@@ -39,7 +39,6 @@ for ($lomultlooper = $minmult;$lomultlooper <=  $himultlooper; $lomultlooper += 
 	}
 	echo "</tr>\n";
 }
-
 "</table>"
 ?><br>
 <?php
