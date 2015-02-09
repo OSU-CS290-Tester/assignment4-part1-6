@@ -1,0 +1,23 @@
+
+
+start: Saturday, 7 Feb 2015 22:00:00
+End: Wed, 7 Jan 2015 22:30:26 -0800
+Tasks: Getting started extremely late on this assigment due to work constraints and a family emergency. All I did during this session was copy the repo, review the requirements, do some googling on PHP, and briefly read the book.
+
+start: Sunday, 8 Feb 2015 10:00:00
+End: Sunday, 8 Feb 2015 10:30:00
+Tasks: Setup a simple HTML file + PHP file that could interact. Copied them onto the OSU server to test. It worked as expected. Started modifying it to meet the requirements of part I of the assigment. 
+
+start: Sunday, 8 Feb 2015 12:30:00
+End: Sunday, 8 Feb 2015 1:00:00
+Tasks: Read book to see how to setup functions and do compares. Very straightforward. Got the first data validtion up and running in a few minutes. 
+
+
+start: Sunday, 8 Feb 2015 1:30:00
+End: Sunday, 8 Feb 2015 2:00:00
+Tasks:  fix some issues with the functions..
+
+
+start: Sunday, 8 Feb 2015 5:00:00
+End: Sunday, 8 Feb 2015 7:00:00
+Tasks:  figured out how to setup a loop within a loop to generate a table. Have to stop due to an emergency at work. Work issues should hopefully let us after this week. 
