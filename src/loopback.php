@@ -4,24 +4,20 @@
 
 class makemyjson
 {
-    
-	function createjson()
-    {
-		echo "{Type: ";
-		echo $_SERVER['REQUEST_METHOD'];
-		echo " parameters :{";
-		$myarray = array();
-		foreach($_POST as $key=>$value)
-		{
-			array_push($myarray,"$key:$value");
-		}
-		print_r($myarray);
-    }
+		public $Type; 
+		public $parameters = array();
 }
 
 
 $makemyjson = new makemyjson;
-$makemyjson->createjson();
+$makemyjson->Type = $_SERVER['REQUEST_METHOD'];
+foreach($_POST as $key=>$value)
+	{
+		array_push($makemyjson->parameters,"$key:$value");
+	}
+ $someJSON = json_encode($makemyjson);
+  //console.log($someJSON);
+ echo $someJSON;
 
 ?>
 </body>
