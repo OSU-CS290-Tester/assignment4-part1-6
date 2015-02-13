@@ -1,15 +1,14 @@
 <html>
 <body>
-Login();
-function Login()
-{
+<?php
     if(empty($_POST['username']))
     {
-        $this->HandleError("UserName is empty!");
-        return false;
-    }
-          
-    $username = trim($_POST['username']);     
-}
+         echo "UserName is empty!";
+    } else
+	{
+		$username = trim($_POST['username']);    
+		echo "Welcome $username! ";
+	}
+?>	
 </body>
 </html> 
