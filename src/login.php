@@ -4,8 +4,8 @@
 Welcome <?php echo $_GET["name"]; ?><br>
 Please enter your username: <?php echo $_GET["email"]; ?>
 <input type="text" name="username">
-<button type="button">Login</button> 
-<input type="submit">
+<button type="submit">Login</button> 
+
  
 </body>
 </html> 
